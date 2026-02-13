@@ -11,15 +11,17 @@
         <li>Home</li>
         <li>Explore</li>
         <li>GG</li>
-        <li>Resume</li>
-        <li>CV</li>
-        <li>About</li>
+        <li class="About-section">Resume</li>
+        <li class="About-section">CV</li>
+        <li class="About-section">About</li>
     </ul>
 
     <script>
         console.log("Exploring HTML DOM Manipulation")
         let H1 = document.getElementById("first");
         console.log(H1.innerText);
+        H1.style.backgroundColor = "red"
+        H1.style.fontSize = "4rem";
         
     </script>
 </body>
