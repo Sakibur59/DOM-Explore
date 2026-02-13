@@ -6,7 +6,7 @@
     <title>HTML DOM Explore</title>
 </head>
 <body>
-    <h1>Exploring HTML DOM</h1>
+    <h1 id="first">Exploring HTML DOM</h1>
     <ul>
         <li>Home</li>
         <li>Explore</li>
@@ -15,5 +15,12 @@
         <li>CV</li>
         <li>About</li>
     </ul>
+
+    <script>
+        console.log("Exploring HTML DOM Manipulation")
+        let H1 = document.getElementById("first");
+        console.log(H1.innerText);
+        
+    </script>
 </body>
 </html>
