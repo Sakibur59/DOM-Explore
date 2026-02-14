@@ -1,5 +1,12 @@
-let section1 = document.createElement("section")
-section1.innerText = 'hello';
+let section = document.createElement("section")
+section.innerText = 'hello';
 
-let main1 = document.getElementById("main-section")
-main1.appendChild(section1);
+let main = document.getElementById("main-section")
+main.appendChild(section);
+
+let ul = document.createElement("ul");
+let li = document.createElement("li");
+li.innerText="Mango";
+ul.appendChild(li);
+
+section.appendChild(ul)
