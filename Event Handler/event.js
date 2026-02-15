@@ -14,3 +14,9 @@ document.getElementById("btn-2").addEventListener('click',function (){
     displayOutput.appendChild(commentElement);
     
 })
+
+document.getElementById("input").addEventListener("focus",function () {
+    console.log("User Typing....")
+})
+
+
