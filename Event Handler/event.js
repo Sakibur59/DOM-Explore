@@ -18,7 +18,10 @@ document.getElementById("btn-2").addEventListener('click',function (){
 document.getElementById("input").addEventListener("focus",function () {
     console.log("User Typing....")
 })
-document.getElementById("btn-3").addEventListener("mouseenter",function () {
-    console.log("mouse enter")
+// document.getElementById("btn-3").addEventListener("mouseenter",function () {
+//     console.log("mouse enter")
+// })
+document.getElementById("btn-3").addEventListener("mousemove",function () {
+    console.log("Mouse Moving inside the button")
 })
 
