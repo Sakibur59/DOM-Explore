@@ -25,10 +25,18 @@ document.getElementById("btn-3").addEventListener("mousemove",function () {
     console.log("Mouse Moving inside the button")
 })
 
-let item = document.getElementsByClassName("items")
- for (const element of item) {
-    element.addEventListener('click',function (event){
-        event.target.parentNode.removeChild(event.target)
-    })
- }
-
+// let item = document.getElementsByClassName("items")
+//  for (const element of item) {
+//     element.addEventListener('click',function (event){
+//         event.target.parentNode.removeChild(event.target)
+//     })
+//  }
+document.getElementById("item-list").addEventListener('click',function (event){
+    event.target.parentNode.removeChild(event.target)
+})
+document.getElementById("btn-new-item").addEventListener("click",function () {
+    let ol = document.getElementById("item-list");
+    let li = document.createElement('li');
+    li.innerText = 'Add new item';
+    ol.appendChild(li);
+})
