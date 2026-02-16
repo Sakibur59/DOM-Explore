@@ -25,3 +25,7 @@ document.getElementById("btn-3").addEventListener("mousemove",function () {
     console.log("Mouse Moving inside the button")
 })
 
+document.getElementById("item-list").addEventListener("click",function (event){
+    console.log(event.target);
+})
+
